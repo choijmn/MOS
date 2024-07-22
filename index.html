@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="ic.png"/> 
+    <link rel="apple-touch-icon" href="img/logo/favicon.png"/> 
+	<title>MOS</title>
+	<style type="text/css">
+		html {
+			scroll-behavior: smooth; /* 부드러운 스크롤 설정 */
+		}
+		body {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			height: 350vh; /* 페이지 높이를 충분히 크게 설정 */
+		}
+		img.top01 {
+			width: 95%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			z-index: 30;
+		}
+		img.1 {
+			width: 100%;
+			height: auto;
+		}
+		img.cal {
+			width: 85%;
+			height: auto;
+			padding-top: 100px;
+			padding-bottom: 50px; /* 상단 여백 추가 */
+		}
+		img.top02 {
+			width: 30%;
+			height: auto;
+			position: absolute;
+			top: 72px;
+			z-index: 10;
+		}
+		img.img2 {
+			width: 85%;
+			height: auto;
+			padding-top: 100px;
+			padding-bottom: 50px; /* 상단 여백 추가 */
+		}
+		img.img3 {
+			width: 85%;
+			height: auto;
+			padding-top: 100px;
+			padding-bottom: 50px; /* 상단 여백 추가 */
+		}
+		img.footer {
+			width: 95%;
+			height: auto;
+			padding-top: 100px;
+			padding-bottom: 20px; /* 상단 여백 추가 */
+		}		
+
+		.navv,
+		.navv * {
+			box-sizing: border-box;
+		}
+		.navv {
+			width: 100%;
+			max-width: 1731px; /* nav-bg의 너비에 맞춤 */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 20; /* navv 요소가 다른 요소 위에 오도록 설정 */
+			position: sticky;
+			top: 0;
+		}
+		.nav-bg {
+			width: 100%;
+			height: 87px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			backdrop-filter: blur(2px);
+			background: rgba(255, 255, 255, 0.7);
+		}
+		.i, .h, .m {
+			border-radius: 22.5px;
+			border-style: solid;
+			border-color: #000000;
+			border-width: 2.5px;
+			height: 29px;
+			overflow: hidden;
+			margin: 0 10px; /* 간격 추가 */
+			position: relative; /* 수정된 위치 설정 */
+		}
+		.i {
+			width: 121px;
+		}
+		.h {
+			width: 87px;
+		}
+		.m {
+			width: 130px;
+		}
+		.ic {
+			width: 3.5%;
+			height: auto;
+			position: absolute;
+			left: 27px;
+			top: 20px;
+			object-fit: cover;
+		}
+		.i {
+			border-radius: 22.5px;
+			border-style: solid;
+			border-color: #000000;
+			border-width: 2.5px;
+			width: 121px;
+			height: 29px;
+			position: absolute;
+			left: 1580px;
+			top: 39px;
+			overflow: hidden;
+		}
+		.interview {
+			color: #000000;
+			text-align: left;
+			font-family: "Pretendard-Medium", sans-serif;
+			font-size: 22px;
+			letter-spacing: -0.05em;
+			font-weight: 500;
+			position: absolute;
+			left: calc(50% - 42.5px);
+			top: calc(50% - 13.5px);
+		}
+		.h {
+			border-radius: 22.5px;
+			border-style: solid;
+			border-color: #000000;
+			border-width: 2.5px;
+			width: 87px;
+			height: 29px;
+			position: absolute;
+			left: 1333px;
+			top: 39px;
+			overflow: hidden;
+		}
+		.home {
+			color: #000000;
+			text-align: left;
+			font-family: "Pretendard-Medium", sans-serif;
+			font-size: 22px;
+			letter-spacing: -0.05em;
+			font-weight: 500;
+			position: absolute;
+			left: calc(50% - 28.5px);
+			top: calc(50% - 13.5px);
+		}
+		.m {
+			border-radius: 22.5px;
+			border-style: solid;
+			border-color: #000000;
+			border-width: 2.5px;
+			width: 130px;
+			height: 29px;
+			position: absolute;
+			left: 1435px;
+			top: 39px;
+			overflow: hidden;
+		}
+		.magazine {
+			color: #000000;
+			text-align: left;
+			font-family: "Pretendard-Medium", sans-serif;
+			font-size: 22px;
+			letter-spacing: -0.05em;
+			font-weight: 500;
+			position: absolute;
+			left: calc(50% - 45px);
+			top: calc(50% - 14.5px);
+		}
+		html::selection {
+		background-color: aliceblue;
+		color: greenyellow;}
+
+	</style>
+</head>
+<body>
+	<a id="top"></a>
+	<div class="navv">
+		<div class="nav-bg"></div>
+		<div class="i">
+			<div class="interview">Interview</div>
+		</div>
+		<div class="h">
+			<div class="home">Home</div>
+		</div>
+		<div class="m">
+			<div class="magazine">Magazine</div>
+		</div>
+		<a href="#top"><img class="ic" src="ic.png" /></a>
+	</div>
+	<img src="top01.png" class="top01">
+	<img src="top02.gif" class="top02">
+	<img src="img1.jpg" class="img1">
+	<img src="img2.svg" class="img2">
+	<img src="cal.svg" class="cal">
+	<img src="img3.svg" class="img3">
+	<img src="footer.svg" class="footer">
+</body>
+</html>
